@@ -9,7 +9,6 @@
     project-card { display:block; border:1px solid; padding:0.5rem; }
   </style>
   <script>
-    // Required "Hello World" custom element (prints to console only; no DOM changes)
     class HelloConsole extends HTMLElement { connectedCallback(){ console.log('Hello world!'); } }
     customElements.define('hello-console', HelloConsole);
   </script>
@@ -32,7 +31,7 @@
     <h2>Project Detail Page</h2>
 
     <section aria-labelledby="filter">
-      <h3 id="filter">Find Project (non-functional placeholder)</h3>
+      <h3 id="filter">Find Project</h3>
       <form role="search">
         <label for="q">Enter Project Name</label>
         <input id="q" name="q" type="search" placeholder="Search…">
